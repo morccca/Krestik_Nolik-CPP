@@ -1,0 +1,10 @@
+^D:\CPP\KREST_NULL.CPP\CMAKELISTS.TXT
+setlocal
+D:\sis_admin\cmake-3.31.4-windows-x86_64\bin\cmake.exe -SD:/cpp/krest_null.cpp -BD:/cpp/krest_null.cpp/build --check-stamp-file D:/cpp/krest_null.cpp/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
